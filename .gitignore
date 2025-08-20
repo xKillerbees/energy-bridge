@@ -5,17 +5,17 @@
 .gradle-cache/
 !gradle/wrapper/gradle-wrapper.jar
 
-# IntelliJ / VSCode
+# IDEs
 .idea/
 *.iml
 .vscode/
 
-# OS cruft
+# OS
 .DS_Store
 Thumbs.db
 
 # Logs
 *.log
 
-# Minecraft/Run outputs (if you keep a run dir)
+# Minecraft run dir (if present)
 run/

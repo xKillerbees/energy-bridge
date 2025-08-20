@@ -1,0 +1,36 @@
+# Energy Bridge
+
+Minecraft **NeoForge 1.21.1** mod that bridges Forge Energy (FE) between adjacent blocks.
+Pulls from any neighbor that can **extract**, and pushes to any neighbor that can **receive**. 
+Includes an internal buffer.
+
+## Requirements
+- Java **21**
+- Gradle Wrapper (included) or local Gradle
+- Minecraft **1.21.1**, **NeoForge**
+
+## Build
+```bash
+./gradlew clean build
+```
+
+Artifacts are in `build/libs/`.
+
+## Versioning
+- Project version is usually set in `gradle.properties` as `mod_version`, or directly in `build.gradle`.
+- Keep `src/main/resources/META-INF/neoforge.mods.toml` `[[mods]].version` in sync.
+- Tag releases: `git tag v1.0.1 && git push origin v1.0.1`
+
+## Release workflow
+This repository includes a GitHub Actions workflow (`.github/workflows/release.yml`):
+- On tag `v*.*.*`, CI builds the mod and creates a GitHub Release with the JAR attached.
+- You can also run it manually via the "Run workflow" button.
+
+## Local testing tips
+- Use a dev environment run config or copy the built JAR to your `mods/` directory for a 1.21.1 NeoForge instance.
+- Break the Energy Bridge in survival — it should always drop itself.
+- Place the block next to an FE source/sink to observe pulling/pushing behavior.
+- Tweak capacity/IO in `EnergyBridgeBE` and rebuild.
+
+## License
+MIT — see `LICENSE`.
