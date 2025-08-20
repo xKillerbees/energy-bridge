@@ -1,0 +1,21 @@
+# Build & Gradle
+/build/
+/out/
+/.gradle/
+.gradle-cache/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ / VSCode
+.idea/
+*.iml
+.vscode/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Minecraft/Run outputs (if you keep a run dir)
+run/

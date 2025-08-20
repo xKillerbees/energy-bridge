@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "energybridge:energy_bridge",
+    "tfmg_energy_bridge:energy_bridge"
+  ]
+}

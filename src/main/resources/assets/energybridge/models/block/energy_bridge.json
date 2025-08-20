@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "energybridge:block/input",
+    "down": "energybridge:block/output",
+    "up": "energybridge:block/output",
+    "north": "energybridge:block/input",
+    "east": "energybridge:block/input",
+    "south": "energybridge:block/input",
+    "west": "energybridge:block/input"
+  }
+}

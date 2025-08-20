@@ -1,0 +1,20 @@
+
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+  modId="energybridge"
+  version="${version}"
+  displayName="Energy Bridge"
+  authors="you"
+  description='''Baseline that accepts and outputs on all sides (the one that "worked but wrong sides").'''
+[[dependencies.energybridge]]
+  modId="neoforge"
+  type="required"
+  versionRange="[21.1,)"
+  side="BOTH"
+[[dependencies.energybridge]]
+  modId="minecraft"
+  type="required"
+  versionRange="[1.21.1,)"
+  side="BOTH"
